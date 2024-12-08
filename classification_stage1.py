@@ -2,7 +2,7 @@ import os
 import shutil
 from sklearn.model_selection import train_test_split
 
-# Paths to your current dataset
+
 brain_dir =r'D:\data\Brain'
 no_brain_dir =r'D:\data\No_Brain'
 #print(brain_dir)
@@ -13,7 +13,7 @@ print("Brain files:", os.listdir(brain_dir))
 print("No Brain files:", os.listdir(no_brain_dir))
 
 
-# Create train/validation directories
+# train/validation directories
 os.makedirs(os.path.join(train_dir, 'Brain'), exist_ok=True)
 os.makedirs(os.path.join(train_dir, 'No_Brain'), exist_ok=True)
 os.makedirs(os.path.join(val_dir, 'Brain'), exist_ok=True)
